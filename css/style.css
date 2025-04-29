@@ -107,9 +107,36 @@ color: rgba(75, 75, 75, 0.7);
 }
 
 
-/* nav part */
+/* menu part */
+.header-menu {
+  width: 100%;
+  padding: 20px 0;
+}
+.header-menu nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: larger;
+  font-weight: 200;
+}
+.header-menu nav ul li.hovered {
+  border-bottom: 2px solid var(--main-color-org);
+}
+.header-menu nav ul li.hovered a {
+  color: var(--main-color-org);
 
-
+}
+.header-menu nav ul li {
+  padding:0 8px 12px 8px;
+  transition: all 1s;
+}
+.header-menu nav ul li:hover {
+  border-bottom: 2px solid var(--main-color-org);
+}
+.header-menu nav ul li:hover a {
+  color: var(--main-color-org);
+}
 /* MAIN */
 
 /* FOOTER */
