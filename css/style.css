@@ -1,0 +1,115 @@
+@font-face {
+  font-family: roboto-bold;
+  src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Catamaran-Medium;
+  src: url(../font/Catamaran-Medium.ttf);
+}
+
+:root {
+  --main-color-org:rgb(248, 119, 93);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: Catamaran-Medium;
+  background-color: rgb(245, 246, 240);
+}
+
+ul , li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+
+/* total class */
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transition-one-sec {
+  transition: all 1s;
+}
+
+/* HEADER */
+/* logo part */
+.header-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.header-logo .header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header-logo .header-left .left-part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-logo .header-left div:hover a {
+  color: var(--main-color-org);
+}
+.header-logo .header-left .left-part1 span {
+  background-color: var(--main-color-org);
+  color: white;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.header-logo .header-center {
+  width: 20%;
+}
+.header-logo .header-right ul{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-logo .header-right ul li a {
+  font-size: larger;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-logo .header-right ul li:hover a {
+background-color: white;
+border-radius: 4px;
+transition: all 1s;
+color: rgba(75, 75, 75, 0.7);
+}
+
+
+/* nav part */
+
+
+/* MAIN */
+
+/* FOOTER */
